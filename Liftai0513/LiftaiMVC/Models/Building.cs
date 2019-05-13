@@ -8,11 +8,13 @@ namespace LiftaiMVC.Models
 {
     public class Building
     {
+        public int id { get; set; }
         public string Address { get; private set; }
         public int FloorsNum { get; private set; }
         public int StairwaysNum { get; private set; }
         public string Notes { get; private set; }
 
+        private Building() { }
         public Building(string address, int floors, int stairways, string notes)
         {
             Address = address;

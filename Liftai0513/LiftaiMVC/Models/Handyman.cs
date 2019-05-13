@@ -8,5 +8,8 @@ namespace LiftaiMVC.Models
 {
     public class Handyman
     {
+        public int id { get; set; }
+
+        private Handyman() { }
     }
 }

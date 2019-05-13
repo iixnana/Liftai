@@ -8,7 +8,10 @@ namespace LiftaiMVC.Models
 {
     public class Notification
     {
+        public int id { get; set; }
         public DateTime Date { get; private set; }
         public bool Read { get; private set; }
+
+        private Notification() { }
     }
 }
