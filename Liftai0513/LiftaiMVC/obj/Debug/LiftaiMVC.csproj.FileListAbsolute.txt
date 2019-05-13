@@ -1,0 +1,172 @@
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\LiftaiMVC.dll.config
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\LiftaiMVC.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\LiftaiMVC.pdb
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\csc.exe
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\csc.exe.config
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\csc.rsp
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\csi.exe
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\csi.exe.config
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\csi.rsp
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\Microsoft.Managed.Core.targets
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\System.AppContext.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\System.Collections.Immutable.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\System.Console.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\System.IO.Compression.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\System.IO.FileSystem.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\System.IO.Pipes.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\System.Reflection.Metadata.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\System.Security.AccessControl.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\System.Security.Claims.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\System.Security.Principal.Windows.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\System.ValueTuple.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\System.Xml.XmlDocument.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\System.Xml.XPath.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\vbc.exe
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\vbc.exe.config
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\vbc.rsp
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\VBCSCompiler.exe
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\roslyn\VBCSCompiler.exe.config
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\Antlr3.Runtime.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\Microsoft.Web.Infrastructure.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\Newtonsoft.Json.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\System.Diagnostics.DiagnosticSource.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\System.Web.Helpers.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\System.Web.Mvc.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\System.Web.Optimization.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\System.Web.Razor.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\System.Web.WebPages.Deployment.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\System.Web.WebPages.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\System.Web.WebPages.Razor.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\WebGrease.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\System.Web.Helpers.xml
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\System.Web.Mvc.xml
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\System.Web.Optimization.xml
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\System.Web.Razor.xml
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\System.Web.WebPages.xml
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\System.Web.WebPages.Deployment.xml
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\System.Web.WebPages.Razor.xml
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\Newtonsoft.Json.xml
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\Antlr3.Runtime.pdb
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\System.Diagnostics.DiagnosticSource.xml
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\obj\Debug\LiftaiMVC.csprojAssemblyReference.cache
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\obj\Debug\LiftaiMVC.csproj.CoreCompileInputs.cache
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\obj\Debug\LiftaiMVC.csproj.CopyComplete
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\obj\Debug\LiftaiMVC.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\obj\Debug\LiftaiMVC.pdb
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\System.Net.Http.Formatting.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\System.Web.Http.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\System.Web.Http.WebHost.dll
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\System.Net.Http.Formatting.xml
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\System.Web.Http.xml
+E:\University\6 semestras\Irankiai\LiftaiMVC\LiftaiMVC\bin\System.Web.Http.WebHost.xml
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\LiftaiMVC.dll.config
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\LiftaiMVC.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\LiftaiMVC.pdb
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\csc.exe
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\csc.exe.config
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\csc.rsp
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\csi.exe
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\csi.exe.config
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\csi.rsp
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\System.AppContext.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\System.Console.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\System.IO.Compression.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\System.IO.Pipes.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\System.Security.Claims.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\System.ValueTuple.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\System.Xml.XPath.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\vbc.exe
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\vbc.exe.config
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\vbc.rsp
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\VBCSCompiler.exe
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\Antlr3.Runtime.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\Newtonsoft.Json.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\System.Net.Http.Formatting.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\System.Web.Helpers.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\System.Web.Http.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\System.Web.Http.WebHost.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\System.Web.Mvc.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\System.Web.Optimization.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\System.Web.Razor.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\System.Web.WebPages.Deployment.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\System.Web.WebPages.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\System.Web.WebPages.Razor.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\WebGrease.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\System.Net.Http.Formatting.xml
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\System.Web.Http.xml
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\System.Web.Http.WebHost.xml
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\System.Web.Helpers.xml
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\System.Web.Mvc.xml
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\System.Web.Optimization.xml
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\System.Web.Razor.xml
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\System.Web.WebPages.xml
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\System.Web.WebPages.Deployment.xml
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\System.Web.WebPages.Razor.xml
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\Newtonsoft.Json.xml
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\Antlr3.Runtime.pdb
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\obj\Debug\LiftaiMVC.csprojAssemblyReference.cache
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\obj\Debug\LiftaiMVC.csproj.CoreCompileInputs.cache
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\obj\Debug\LiftaiMVC.csproj.CopyComplete
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\obj\Debug\LiftaiMVC.dll
+C:\Users\kamnan\Desktop\LiftaiMVC - Copy\LiftaiMVC\obj\Debug\LiftaiMVC.pdb
