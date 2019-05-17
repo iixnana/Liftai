@@ -13,5 +13,12 @@ namespace LiftaiMVC.Controllers
         {
             return View();
         }
+
+        public ActionResult DetailedBuildingInfo(int id)
+        {
+            Models.ElevatorsDB db = new Models.ElevatorsDB();
+            Models.Building building = db.Buildings.First(x => x.id == id);
+            return View(building);
+        }
     }
 }
