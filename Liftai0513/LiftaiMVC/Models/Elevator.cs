@@ -3,33 +3,83 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
+using System.Web.Mvc;
 
 namespace LiftaiMVC.Models
 {
     public class Elevator
     {
         [Key]
-        public string SerialNum { get; private set; }
-        public string Model { get; private set; }
-        public DateTime DeploymentDate { get; private set; }
-        public int MaxWeight { get; private set; }
-        public int Stairway { get; private set; }
-        public DateTime LastCheckUp { get; private set; }
-        public int CheckUpFrequency { get; private set; }
-        // LIFTO BŪKLĖ
-        public string Notes { get; private set; }
+        public int ID { get; set; }
 
-        private Elevator() { }
-        public Elevator(string serial, string model, DateTime deployment, int max, int stairway, DateTime checkup, int freq, string notes)
+        [Required(ErrorMessage = "Būtina užpildyti šį lauką")]
+        [Display(Name = "Serijos numeris")]
+        [DataType(DataType.Text)]
+        public string SerialNum { get; set; }
+
+        [Required(ErrorMessage = "Būtina užpildyti šį lauką")]
+        [Display(Name = "Modelis")]
+        [DataType(DataType.Text)]
+        public string Model { get; set; }
+
+        [Required(ErrorMessage = "Būtina užpildyti šį lauką")]
+        [Display(Name = "Įrengimo data")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        public DateTime DeploymentDate { get; set; }
+
+        [Required(ErrorMessage = "Būtina užpildyti šį lauką")]
+        [Display(Name = "Maksimalus svoris (kg)")]
+        [Range(1, 5000, ErrorMessage = "Įveskite tinkamą svorį (1-5000)")]
+        public int MaxWeight { get; set; }
+
+        [Required(ErrorMessage = "Būtina užpildyti šį lauką")]
+        [Display(Name = "Laiptinės numeris")]
+        [Range(0, 100, ErrorMessage = "Įveskite tinkamą laiptinės numerį (0-100)")]
+        public int Stairway { get; set; }
+
+        [Required(ErrorMessage = "Būtina užpildyti šį lauką")]
+        [Display(Name = "Paskutinės profilaktikos data")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        public DateTime LastCheckUp { get; set; }
+
+        [Required(ErrorMessage = "Būtina užpildyti šį lauką")]
+        [Display(Name = "Profilaktikos dažnumas (mėn)")]
+        [Range(1, 48, ErrorMessage = "Įveskite tinkamą mėnesių kiekį (1-48)")]
+        public int CheckUpFrequency { get; set; }
+
+
+        // LIFTO BŪKLĖ
+
+        [Display(Name = "Pastabos")]
+        [DataType(DataType.MultilineText)]
+        public string Notes { get; set; }
+
+        [Required(ErrorMessage = "Būtina užpildyti šį lauką")]
+        [Display(Name = "Pastato ID")]
+        public string BuildingID { get; set; } // IDETI I UML DIAGRAMA!!!!
+
+        [Required(ErrorMessage = "Būtina pasirinkti būseną")]
+        [Display(Name = "Būsena")]
+        public States State { get; set; }
+
+        public Elevator()
         {
-            SerialNum = serial;
-            Model = model;
-            DeploymentDate = deployment;
-            MaxWeight = max;
-            Stairway = stairway;
-            LastCheckUp = checkup;
-            CheckUpFrequency = freq;
-            Notes = notes;
+            DeploymentDate = DateTime.Now.Date;
+            MaxWeight = 500;
+            Stairway = 0;
+            LastCheckUp = DateTime.Now.Date;
+            CheckUpFrequency = 12;
         }
     }
+
+    public enum States
+    {
+        [Display(Name = "Veikiantis")]
+        Veikiantis,
+        [Display(Name = "Sugedes")]
+        Sugedes,
+        [Display(Name = "Isjungtas")]
+        Isjungtas }
 }

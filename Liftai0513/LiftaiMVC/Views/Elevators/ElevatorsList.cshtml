@@ -1,27 +1,48 @@
 ﻿@model IEnumerable<LiftaiMVC.Models.Elevator>
-
 @{
-    ViewBag.Title = "ElevatorsList";
+	ViewBag.Title = "ElevatorsList";
 }
 
-<h2>ElevatorsList</h2>
-
-@*<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+<h2>Liftų sąrašas</h2>
+<hr />
+@if (HttpContext.Current.Session["Type"].ToString() == "Admin")
+{
+	<div class="row">
+		<div class="col-lg-10">
+			<p><a class="btn btn-default" href="~/Elevators/ElevatorForm">Kurti naują liftą &raquo;</a></p>
+		</div>
+	</div>
+}
 <table class="table">
-    <tr>
-        <th></th>
-    </tr>
+	<tr>
+		<th>Serijos numeris</th>
+		<th>Modelis</th>
+		<th>Būsena</th>
+		<th>Paskutinė profilaktika</th>
+		<th>Profilaktikos dažnumas</th>
+		<th>Kita informacija</th>
+		@if (HttpContext.Current.Session["Type"].ToString() == "Admin")
+		{
+			<th>Trinti įrašą</th>
+		}
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-        </td>
-    </tr>
-}
-
-</table>*@
+	</tr>
+	@foreach (var item in Model)
+	{
+		<tr>
+			<td>@item.SerialNum</td>
+			<td>@item.Model</td>
+			<td>@item.State
+			</td>
+			<td>@item.LastCheckUp</td>
+			<td>@item.CheckUpFrequency</td>
+			<td>@Html.ActionLink("Detaliau", "DetailedElevatorInfo", new { id = item.ID })</td>
+			@if (HttpContext.Current.Session["Type"].ToString() == "Admin")
+			{
+				<td>
+					@Html.ActionLink("Trinti", "Delete", new { id = item.ID }, new { onclick = "return confirm('Ar tikrai norite ištrinti šį įrašą?');" })
+				</td>
+			}
+		</tr>
+	}
+</table>
