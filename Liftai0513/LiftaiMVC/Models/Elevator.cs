@@ -72,14 +72,27 @@ namespace LiftaiMVC.Models
             LastCheckUp = DateTime.Now.Date;
             CheckUpFrequency = 12;
         }
+
+        public bool changeState(string state)
+        {
+            foreach(States st in Enum.GetValues(typeof(States)))
+            {
+                if (state == st.ToString())
+                {
+                    this.State = st;
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 
     public enum States
     {
         [Display(Name = "Veikiantis")]
-        Veikiantis,
-        [Display(Name = "Sugedes")]
-        Sugedes,
-        [Display(Name = "Isjungtas")]
-        Isjungtas }
+        active,
+        [Display(Name = "Sugedęs")]
+        broken,
+        [Display(Name = "Sustabdytas")]
+        stopped }
 }
