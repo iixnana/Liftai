@@ -11,7 +11,13 @@ namespace LiftaiMVC.Models
         public int id { get; set; }
         public DateTime Date { get; private set; }
         public bool Read { get; private set; }
+        public int ElevatorId { get; private set; }
 
-        private Notification() { }
+        public Notification(int id)
+        {
+            Date = DateTime.UtcNow;
+            Read = false;
+            ElevatorId = id;
+        }
     }
 }
