@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
+using System.Reflection;
 
 namespace LiftaiMVC.Models
 {
@@ -72,14 +73,53 @@ namespace LiftaiMVC.Models
             LastCheckUp = DateTime.Now.Date;
             CheckUpFrequency = 12;
         }
+
+        public bool changeState(string state)
+        {
+            foreach(States st in Enum.GetValues(typeof(States)))
+            {
+                if (state == st.ToString())
+                {
+                    this.State = st;
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public string StateName()
+        {
+            return this.State.GetAttribute<DisplayAttribute>().Name;
+        }
+    }
+
+    public static class Extensions
+    {
+        /// <summary>
+        ///     A generic extension method that aids in reflecting 
+        ///     and retrieving any attribute that is applied to an `Enum`.
+        /// </summary>
+        public static TAttribute GetAttribute<TAttribute>(this Enum enumValue)
+                where TAttribute : Attribute
+        {
+            return enumValue.GetType()
+                            .GetMember(enumValue.ToString())
+                            .First()
+                            .GetCustomAttribute<TAttribute>();
+        }
     }
 
     public enum States
     {
         [Display(Name = "Veikiantis")]
-        Veikiantis,
-        [Display(Name = "Sugedes")]
-        Sugedes,
-        [Display(Name = "Isjungtas")]
-        Isjungtas }
+        active,
+        [Display(Name = "Sugedęs")]
+        broken,
+        [Display(Name = "Tvarkomas")]
+        repairing,
+        [Display(Name = "Nebeveikiantis")]
+        dead,
+        [Display(Name = "Sustabdytas")]
+        stopped
+    }
 }

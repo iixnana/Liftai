@@ -9,11 +9,7 @@ namespace LiftaiMVC.Models
     public class Handyman
     {
         public int id { get; set; }
-        public int status { get; set; }
-        public int currentTask { get; set; }
 
-        private Handyman()
-        {
-        }
+        private Handyman() { }
     }
 }
