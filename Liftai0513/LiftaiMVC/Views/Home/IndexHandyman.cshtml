@@ -1,18 +1,45 @@
-﻿
+﻿@model LiftaiMVC.Models.Task
 @{
-    ViewBag.Title = "Meistras";
+    ViewBag.Title = "IndexHandyman";
 }
 
 <div class="jumbotron">
     <h1>Liftų valdymo sistema</h1>
-    @*<p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-        <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
 </div>
 <div class="row">
 	<div class="col-lg-10">
 		<h2>Priskirtas darbas</h2>
 		<hr />
-		<div class="lead" name="handymanJob">Nėra</div>
+        
+            <div class="lead" name="handymanJob"></div>
+        
+        @if (Model.id != 0 || Model.id != -1)
+        {
+            <div>
+                <table class="table">
+                    <tr>
+                        <td>Užduotis sukurta</td><td>Aprašymas</td><td>Lifto ID</td><td>Liftas</td><td>Galimi veiksmai</td>
+                    </tr>
+                    <tr>
+                        <td>@Model.FailureDate</td><td>@Model.Description</td><td>@Model.ElevatorID</td><td><a href="~/Views/Elevators/ElevatorForm.cshtml">Detaliau</a></td>
+                        @if (HttpContext.Current.Session["Type"].ToString() == "Handyman")
+                        {
+                            <td>
+                                @Html.ActionLink("Žymėti kaip atliktą", "changeStatus", new { onclick = "return confirm('Ar tikrai norite ištrinti šį įrašą?');" })
+                            </td>
+                        }
+                    </tr>
+                </table>	
+            </div>
+        }
+        @if(Model.id == 0 || Model.id == -1)
+        {
+        <div>
+            Nėra priskirto darbo
+            @Html.ActionLink("Priskirti darbą", "changeStatus", new { onclick = "return confirm('Ar tikrai norite ištrinti šį įrašą?');" })
+        </div>
+        }
+            	
 	</div>
 </div>
 <hr />
@@ -33,27 +60,6 @@
         <h2>Darbo grafikas</h2>
         <p>Galima peržiūrėti darbo grafiką</p>
         <p><a class="btn btn-default" href="~/">Grafikas &raquo;</a></p>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Pavadinimas</h2>
-        <p>Tekstas</p>
-        <p><a class="btn btn-default" href="~/">Tekstas &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Pavadinimas</h2>
-        <p>Tekstas</p>
-        <p><a class="btn btn-default" href="~/">Tekstas &raquo;</a></p>
     </div>
 </div>
 
