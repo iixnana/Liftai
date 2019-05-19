@@ -14,7 +14,6 @@ namespace LiftaiMVC.Models
         public DateTime? FixDate { get; private set; }
         public string Description { get; private set; }
         public int Priority { get; private set; }
-        public int ElevatorID { get; set; }
 
         public Task(int elevatorID, string description, int priority)
         {
