@@ -28,13 +28,3 @@ textarea {
     padding: 0 15px;
     margin: 0 auto;
 }
-
-.form-disabled {
-    pointer-events: none;
-    cursor: initial;
-}
-
-.schedule-preview-container {
-    display: flex;
-    flex-direction: column;
-}

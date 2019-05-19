@@ -6,26 +6,3 @@
 
 <h2>ElevatorAPI</h2>
 
-<h3>Lifto sistemos perkrovimas: </h3>
-<div class="form-group">
-    <a class="btn btn-default" href="@Url.Action("RestartElevator", new { elevatorID = @Model.ID, restart = true })">Perkrovimas pavyko</a>
-    <a class="btn btn-default" href="@Url.Action("RestartElevator", new { elevatorID = @Model.ID, restart = false })">Perkrovimas nepavyko</a>
-</div>
-
-<h3>Lifto būklės užklausai (avarinių stabdžių išjungimui): </h3>
-<div class="form-group">
-    <a class="btn btn-default" href="@Url.Action("TurnOffBrakes", new { elevatorID = @Model.ID, state = true })">Saugus naudoti</a>
-    <a class="btn btn-default" href="@Url.Action("TurnOffBrakes", new { elevatorID = @Model.ID, state = false })">Nesaugus naudoti</a>
-</div>
-
-<h3>Lifto būklės pasikeitimo signalas: </h3>
-<div class="form-group">
-    <a class="btn btn-default" href="@Url.Action("NewState", new { elevatorID = @Model.ID, state = "stopped" })">Sustabdytas</a>
-    <a class="btn btn-default" href="@Url.Action("NewState", new { elevatorID = @Model.ID, state = "broken" })">Sugedęs</a>
-    <a class="btn btn-default" href="@Url.Action("NewState", new { elevatorID = @Model.ID, state = "active" })">Veikiantis</a>
-</div>
-
-<h3>Pagalbos signalai: </h3>
-<div class="form-group">
-    <a class="btn btn-default" href="@Url.Action("SystemFailure", new { elevatorID = @Model.ID })">Iškviesti pagalbą</a>
-</div>
