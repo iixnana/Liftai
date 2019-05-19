@@ -18,12 +18,6 @@ namespace LiftaiMVC
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Login", id = UrlParameter.Optional }
             );
-
-            routes.MapRoute(
-                name: "ElevatorAPI",
-                url: "ElevatorAPI/{id}",
-                defaults: new { controller = "Elevator", action = "Login", id = UrlParameter.Optional }
-            );
         }
     }
 }

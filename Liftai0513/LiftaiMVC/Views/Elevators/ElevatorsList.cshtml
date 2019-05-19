@@ -29,19 +29,20 @@
 	</tr>
 	@foreach (var item in Model)
 	{
-    <tr>
-        <td>@item.SerialNum</td>
-        <td>@item.Model</td>
-        <td>@item.StateName()</td>
-        <td>@item.LastCheckUp</td>
-        <td>@item.CheckUpFrequency</td>
-        <td>@Html.ActionLink("Detaliau", "DetailedElevatorInfo", new { id = item.ID })</td>
-        @if (HttpContext.Current.Session["Type"].ToString() == "Admin")
-        {
-            <td>
-                @Html.ActionLink("Trinti", "Delete", new { id = item.ID }, new { onclick = "return confirm('Ar tikrai norite ištrinti šį įrašą?');" })
-            </td>
-        }
-    </tr>
+		<tr>
+			<td>@item.SerialNum</td>
+			<td>@item.Model</td>
+			<td>@item.State
+			</td>
+			<td>@item.LastCheckUp</td>
+			<td>@item.CheckUpFrequency</td>
+			<td>@Html.ActionLink("Detaliau", "DetailedElevatorInfo", new { id = item.ID })</td>
+			@if (HttpContext.Current.Session["Type"].ToString() == "Admin")
+			{
+				<td>
+					@Html.ActionLink("Trinti", "Delete", new { id = item.ID }, new { onclick = "return confirm('Ar tikrai norite ištrinti šį įrašą?');" })
+				</td>
+			}
+		</tr>
 	}
 </table>
