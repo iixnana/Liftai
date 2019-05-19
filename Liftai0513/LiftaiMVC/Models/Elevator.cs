@@ -85,6 +85,7 @@ namespace LiftaiMVC.Models
             }
             return false;
         }
+        
     }
 
     public enum States
@@ -93,6 +94,11 @@ namespace LiftaiMVC.Models
         active,
         [Display(Name = "Sugedęs")]
         broken,
+        [Display(Name = "Tvarkomas")]
+        repairing,
+        [Display(Name = "Nebeveikiantis")]
+        dead,
         [Display(Name = "Sustabdytas")]
-        stopped }
+        stopped
+    }
 }
