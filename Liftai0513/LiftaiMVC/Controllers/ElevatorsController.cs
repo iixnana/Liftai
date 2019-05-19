@@ -186,5 +186,17 @@ namespace LiftaiMVC.Controllers
             Models.Elevator elevator = db.Elevators.First(x => x.ID == id);
             return View(elevator);
         }
+
+        [HttpGet]
+        public ActionResult SystemFailure(int elevatorID)
+        {
+            Models.ElevatorsDB db = new Models.ElevatorsDB();
+            Models.Notification notification = new Models.Notification(elevatorID);
+            db.Notifications.Add(notification);
+            db.SaveChanges();
+            TempData["EditSuccess"] = "Pagalbos pranešimas sėkmingai išsiųstas.";
+
+            return RedirectToAction("DetailedElevatorInfo", new { id = elevatorID });
+        }
     }
 }

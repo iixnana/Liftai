@@ -24,3 +24,8 @@
     <a class="btn btn-default" href="@Url.Action("NewState", new { elevatorID = @Model.ID, state = "broken" })">Sugedęs</a>
     <a class="btn btn-default" href="@Url.Action("NewState", new { elevatorID = @Model.ID, state = "active" })">Veikiantis</a>
 </div>
+
+<h3>Pagalbos signalai: </h3>
+<div class="form-group">
+    <a class="btn btn-default" href="@Url.Action("SystemFailure", new { elevatorID = @Model.ID })">Iškviesti pagalbą</a>
+</div>
