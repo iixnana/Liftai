@@ -78,7 +78,7 @@
 				}
 				else
 				{
-					<p>Nėra pastatų <a class="btn btn-default" href="~/Buildings/BuildingsList">Eiti į pastatus &raquo;</a></p>
+					<p>Nėra pastatų <a class="btn btn-default" href="@Url.Action("BuildingsList", "Buildings", new { id = @Model.BuildingID })">Eiti į pastatus &raquo;</a></p>
 				}
 
 			</div>
@@ -102,7 +102,7 @@
 				{
 					<input type="submit" value="Išsaugoti pakeitimus" class="btn btn-default" />
 				}
-				<a class="btn btn-default" href="~/Buildings/DetailedBuildingInfo/@Model.BuildingID">Peržiūrėti pastatą &raquo;</a>
+				<a class="btn btn-default" href="@Url.Action("DetailedBuildingInfo", "Buildings", new { id = @Model.BuildingID })">Peržiūrėti pastatą &raquo;</a>
 			</div>
 		</div>
 		@if (HttpContext.Current.Session["Type"].ToString() == "Operator")

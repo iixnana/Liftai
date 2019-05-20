@@ -32,6 +32,7 @@ namespace LiftaiMVC.Controllers
             {
                 Models.ElevatorsDB db = new Models.ElevatorsDB();
                 var handyman = db.Handymans.First(x => x.id == 1);
+                if (handyman.status == 1) findNewTask(); //automatiskai iesko naujos uzduoties su login
                 if (handyman.currentTask != 0 && db.Tasks.Count() > 0)
                 {
                     var task = db.Tasks.First(x => x.id == handyman.currentTask);
@@ -76,7 +77,7 @@ namespace LiftaiMVC.Controllers
             var handyman = db.Handymans.First(x => x.id == 1);
             var selectedTask = selectNewTask(); //New Task
 
-            if (handyman.status == 1 || handyman.currentTask == 0)
+            if (handyman.status == 1)
             {
                 if (selectedTask != null)
                 {
@@ -84,13 +85,6 @@ namespace LiftaiMVC.Controllers
                     db.Entry(handyman).CurrentValues.SetValues(handymanNew);
                     db.SaveChanges();
                 }
-                else
-                {
-                    Models.Handyman handymanNew = new Models.Handyman(1, 1, 0);
-                    db.Entry(handyman).CurrentValues.SetValues(handymanNew);
-                    db.SaveChanges();
-                }
-                    
             }
             return RedirectToAction("IndexHandyman");
         }

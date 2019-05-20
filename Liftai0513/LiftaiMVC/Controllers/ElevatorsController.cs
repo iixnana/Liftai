@@ -254,8 +254,9 @@ namespace LiftaiMVC.Controllers
                     var taskController = DependencyResolver.Current.GetService<TaskController>();
                     taskController.ControllerContext = new ControllerContext(this.Request.RequestContext, taskController);
                     string description = "Lifto būklė pasikeitė į " + Models.Elevator.StateName(state);
-                    if (taskController.CreateTask(elevatorID, state))
+                    if (taskController.CreateTask(elevatorID, description))
                         TempData["EditSuccess"] += " Pridėta nauja užduotis.";
+                    RedirectToAction("findNewTask", "Home"); //Automatiskai bando priskirt meistrui, jei jis laisvas
                 }
 
                 return RedirectToAction("DetailedElevatorInfo", new { id = elevatorID });
