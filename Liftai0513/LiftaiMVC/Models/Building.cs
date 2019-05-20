@@ -13,6 +13,12 @@ namespace LiftaiMVC.Models
         public int FloorsNum { get; private set; }
         public int StairwaysNum { get; private set; }
         public string Notes { get; private set; }
+        public Models.Elevator[] Elevators { get; private set; }
+
+        public Building(Models.Elevator[] elevators)
+        {
+            Elevators = elevators;
+        }
 
         private Building() { }
         public Building(string address, int floors, int stairways, string notes)

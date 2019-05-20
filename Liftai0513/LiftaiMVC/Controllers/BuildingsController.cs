@@ -8,6 +8,11 @@ namespace LiftaiMVC.Controllers
 {
     public class BuildingsController : Controller
     {
+        public void GetElevatorData()
+        {
+            var elevator = new Models.Elevator().SelectElevator();
+        }
+
         // GET: Buildings
         public ActionResult BuildingsList()
         {

@@ -5,11 +5,17 @@ using System.Web;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
 using System.Reflection;
+using LiftaiMVC.Interfaces;
 
 namespace LiftaiMVC.Models
 {
-    public class Elevator
+    public class Elevator: IElevator
     {
+        public IElevator SelectElevator()
+        {
+            return this;
+        }
+
         [Key]
         public int ID { get; set; }
 

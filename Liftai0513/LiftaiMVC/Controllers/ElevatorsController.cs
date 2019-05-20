@@ -9,6 +9,10 @@ namespace LiftaiMVC.Controllers
 {
     public class ElevatorsController : Controller
     {
+        public void OpenBuildingDetails()
+        {
+            var elevator = new Models.Elevator().SelectElevator();
+        }
 
         // GET: Elevators
         public ActionResult ElevatorsList()
