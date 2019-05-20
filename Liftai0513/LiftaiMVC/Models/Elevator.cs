@@ -91,6 +91,20 @@ namespace LiftaiMVC.Models
         {
             return this.State.GetAttribute<DisplayAttribute>().Name;
         }
+
+        public static string StateName(string state)
+        {
+            States NewState = States.active;
+            if (state == "stopped")
+                NewState = States.stopped;
+            else if (state == "broken")
+                NewState = States.broken;
+            else if (state == "dead")
+                NewState = States.dead;
+            else if (state == "repairing")
+                NewState = States.repairing;
+            return NewState.GetAttribute<DisplayAttribute>().Name;
+        }
     }
 
     public static class Extensions

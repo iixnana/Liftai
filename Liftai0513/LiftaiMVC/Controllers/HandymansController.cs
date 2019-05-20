@@ -14,54 +14,45 @@ namespace LiftaiMVC.Controllers
             return View();
         }
 
+        [NonAction]
         public int selectNewTask()
         {
-            Models.ElevatorsDB db = new Models.ElevatorsDB();
+            try
+            {
+                Models.ElevatorsDB db = new Models.ElevatorsDB();
 
-            if (db.Tasks.Count() == 0)
-                return 0;
+                if (db.Tasks.Count() == 0)
+                    return 0;
 
-            var min = db.Tasks.Min(x => x.Priority);
-            var newTask = db.Tasks.First(x => x.Priority <= min);
+                var min = db.Tasks.Min(x => x.Priority);
+                var newTask = db.Tasks.First(x => x.Priority <= min);
 
-            return newTask.id;
+                return newTask.id;
+            }
+            catch (Exception e)
+            {
+                TempData["error"] = e.Message + " NO ID 14";
+                return -1;
+            }
         }
 
         public ActionResult checkCurrentTask()
         {
-            Models.ElevatorsDB db = new Models.ElevatorsDB();
-            var handyman = db.Handymans.First(x => x.id == 1);
-
-            var task = db.Tasks.First(x => x.id == handyman.currentTask);
-            return View("IndexHandyman", task);
-        }
-
-        public ActionResult changeStatus()
-        {
-            Models.ElevatorsDB db = new Models.ElevatorsDB();
-            var handyman = db.Handymans.First(x => x.id == 1);
-            var finishedTask = db.Tasks.First(x => x.id == handyman.currentTask);
-            var selectedTask = selectNewTask();
-            if (handyman.status == 1)
-            {          
-                if (selectedTask != 0)
-                {
-                    db.Entry(selectedTask.ToString()).CurrentValues.SetValues(handyman.currentTask);
-                    db.Entry("2").CurrentValues.SetValues(handyman.status);
-                    db.SaveChanges();
-                }                   
-            }
-            else if(handyman.status == 2)
+            try
             {
-                if (selectedTask != 0)
-                {
-                    db.Tasks.Remove(finishedTask);
-                    db.Entry(selectedTask.ToString()).CurrentValues.SetValues(handyman.currentTask);
-                    db.SaveChanges();
-                }
+                Models.ElevatorsDB db = new Models.ElevatorsDB();
+                var handyman = db.Handymans.First(x => x.id == 1);
+
+                var task = db.Tasks.First(x => x.id == handyman.currentTask);
+                return View("IndexHandyman", task);
+            }
+            catch (Exception e)
+            {
+                TempData["error"] = e.Message + " 15";
+                return RedirectToAction("Error", "Home");
             }
 
-            return RedirectToAction("IndexHandyman");
         }
+
     }
 }

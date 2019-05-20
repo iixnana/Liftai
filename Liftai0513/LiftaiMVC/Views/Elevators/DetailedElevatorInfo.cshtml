@@ -14,122 +14,126 @@
 {
 	@Html.AntiForgeryToken()
 
-    <div class="form-horizontal">
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <div class="form-group">
-            @Html.LabelFor(m => m.SerialNum, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(m => m.SerialNum, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(m => m.SerialNum, "", new { @class = "text-danger" })
-            </div>
-        </div>
+	<div class="form-horizontal">
+		<hr />
+		@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+		<div class="form-group">
+			@Html.LabelFor(m => m.SerialNum, htmlAttributes: new { @class = "control-label col-md-2" })
+			<div class="col-md-10">
+				@Html.EditorFor(m => m.SerialNum, new { htmlAttributes = new { @class = "form-control" } })
+				@Html.ValidationMessageFor(m => m.SerialNum, "", new { @class = "text-danger" })
+			</div>
+		</div>
 
-        <div class="form-group">
-            @Html.LabelFor(m => m.Model, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(m => m.Model, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(m => m.Model, "", new { @class = "text-danger" })
-            </div>
-        </div>
+		<div class="form-group">
+			@Html.LabelFor(m => m.Model, htmlAttributes: new { @class = "control-label col-md-2" })
+			<div class="col-md-10">
+				@Html.EditorFor(m => m.Model, new { htmlAttributes = new { @class = "form-control" } })
+				@Html.ValidationMessageFor(m => m.Model, "", new { @class = "text-danger" })
+			</div>
+		</div>
 
-        <div class="form-group">
-            @Html.LabelFor(m => m.DeploymentDate, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(m => m.DeploymentDate, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(m => m.DeploymentDate, "", new { @class = "text-danger" })
-            </div>
-        </div>
-        <div class="form-group">
-            @Html.LabelFor(m => m.MaxWeight, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(m => m.MaxWeight, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(m => m.MaxWeight, "", new { @class = "text-danger" })
-            </div>
-        </div>
-        <div class="form-group">
-            @Html.LabelFor(m => m.Stairway, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(m => m.Stairway, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(m => m.Stairway, "", new { @class = "text-danger" })
-            </div>
-        </div>
-        <div class="form-group">
-            @Html.LabelFor(m => m.LastCheckUp, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(m => m.LastCheckUp, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(m => m.LastCheckUp, "", new { @class = "text-danger" })
-            </div>
-        </div>
-        <div class="form-group">
-            @Html.LabelFor(m => m.CheckUpFrequency, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(m => m.CheckUpFrequency, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(m => m.CheckUpFrequency, "", new { @class = "text-danger" })
-            </div>
-        </div>
-        <div class="form-group">
-            @Html.LabelFor(m => m.BuildingID, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @if (ViewData["Buildings"] != null)
-                {
-                    @Html.DropDownListFor(m => m.BuildingID, ViewData["Buildings"] as SelectList, new { @class = "form-control" })
-                    @Html.ValidationMessageFor(m => m.BuildingID, "", new { @class = "text-danger" })
-                }
-                else
-                {
-                    <p>Nėra pastatų <a class="btn btn-default" href="~/Buildings/BuildingsList">Eiti į pastatus &raquo;</a></p>
-                }
+		<div class="form-group">
+			@Html.LabelFor(m => m.DeploymentDate, htmlAttributes: new { @class = "control-label col-md-2" })
+			<div class="col-md-10">
+				@Html.EditorFor(m => m.DeploymentDate, new { htmlAttributes = new { @class = "form-control" } })
+				@Html.ValidationMessageFor(m => m.DeploymentDate, "", new { @class = "text-danger" })
+			</div>
+		</div>
+		<div class="form-group">
+			@Html.LabelFor(m => m.MaxWeight, htmlAttributes: new { @class = "control-label col-md-2" })
+			<div class="col-md-10">
+				@Html.EditorFor(m => m.MaxWeight, new { htmlAttributes = new { @class = "form-control" } })
+				@Html.ValidationMessageFor(m => m.MaxWeight, "", new { @class = "text-danger" })
+			</div>
+		</div>
+		<div class="form-group">
+			@Html.LabelFor(m => m.Stairway, htmlAttributes: new { @class = "control-label col-md-2" })
+			<div class="col-md-10">
+				@Html.EditorFor(m => m.Stairway, new { htmlAttributes = new { @class = "form-control" } })
+				@Html.ValidationMessageFor(m => m.Stairway, "", new { @class = "text-danger" })
+			</div>
+		</div>
+		<div class="form-group">
+			@Html.LabelFor(m => m.LastCheckUp, htmlAttributes: new { @class = "control-label col-md-2" })
+			<div class="col-md-10">
+				@Html.EditorFor(m => m.LastCheckUp, new { htmlAttributes = new { @class = "form-control" } })
+				@Html.ValidationMessageFor(m => m.LastCheckUp, "", new { @class = "text-danger" })
+			</div>
+		</div>
+		<div class="form-group">
+			@Html.LabelFor(m => m.CheckUpFrequency, htmlAttributes: new { @class = "control-label col-md-2" })
+			<div class="col-md-10">
+				@Html.EditorFor(m => m.CheckUpFrequency, new { htmlAttributes = new { @class = "form-control" } })
+				@Html.ValidationMessageFor(m => m.CheckUpFrequency, "", new { @class = "text-danger" })
+			</div>
+		</div>
+		<div class="form-group">
+			@Html.LabelFor(m => m.BuildingID, htmlAttributes: new { @class = "control-label col-md-2" })
+			<div class="col-md-10">
+				@if (ViewData["Buildings"] != null)
+				{
+					@Html.DropDownListFor(m => m.BuildingID, ViewData["Buildings"] as SelectList, new { @class = "form-control" })
+					@Html.ValidationMessageFor(m => m.BuildingID, "", new { @class = "text-danger" })
+				}
+				else
+				{
+					<p>Nėra pastatų <a class="btn btn-default" href="~/Buildings/BuildingsList">Eiti į pastatus &raquo;</a></p>
+				}
 
-            </div>
-        </div>
-        <div class="form-group">
-            @Html.LabelFor(m => m.State, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EnumDropDownListFor(m => m.State, new { @class = "form-control" })
-                @Html.ValidationMessageFor(m => m.State, "", new { @class = "text-danger" })
-            </div>
-        </div>
-        <div class="form-group">
-            @Html.LabelFor(m => m.Notes, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(m => m.Notes, new { htmlAttributes = new { @class = "form-control" } })
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                @if (HttpContext.Current.Session["Type"].ToString() == "Admin" || HttpContext.Current.Session["Type"].ToString() == "Handyman")
-                {
-                    <input type="submit" value="Išsaugoti pakeitimus" class="btn btn-default" />
-                }
-                <a class="btn btn-default" href="~/Buildings/DetailedBuildingInfo/@Model.BuildingID">Peržiūrėti pastatą &raquo;</a>
-            </div>
-        </div>
-        @if (HttpContext.Current.Session["Type"].ToString() == "Operator")
-        {
-            <div class="form-group">
-                <div class="col-md-offset-2 col-md-10">
-                    <a class="btn btn-default" href="@Url.Action("RestartElevator", new { elevatorID = @Model.ID })">Perkrauti lifto sistemą &raquo;</a>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="col-md-offset-2 col-md-10">
-                    <a class="btn btn-default" href="@Url.Action("TurnOffBrakes", new { elevatorID = @Model.ID })">Išjungti avarinius stabdžius &raquo;</a>
-                </div>
-            </div>
-        }
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <a class="btn btn-default" href="@Url.Action("ElevatorAPI", new { id = @Model.ID })">Lifto API &raquo;</a>
+			</div>
+		</div>
+		<div class="form-group">
+			@Html.LabelFor(m => m.State, htmlAttributes: new { @class = "control-label col-md-2" })
+			<div class="col-md-10">
+				@Html.EnumDropDownListFor(m => m.State, new { @class = "form-control" })
+				@Html.ValidationMessageFor(m => m.State, "", new { @class = "text-danger" })
+			</div>
+		</div>
+		<div class="form-group">
+			@Html.LabelFor(m => m.Notes, htmlAttributes: new { @class = "control-label col-md-2" })
+			<div class="col-md-10">
+				@Html.EditorFor(m => m.Notes, new { htmlAttributes = new { @class = "form-control" } })
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-md-offset-2 col-md-10">
+				@if (HttpContext.Current.Session["Type"].ToString() == "Admin" || HttpContext.Current.Session["Type"].ToString() == "Handyman")
+				{
+					<input type="submit" value="Išsaugoti pakeitimus" class="btn btn-default" />
+				}
+				<a class="btn btn-default" href="~/Buildings/DetailedBuildingInfo/@Model.BuildingID">Peržiūrėti pastatą &raquo;</a>
+			</div>
+		</div>
+		@if (HttpContext.Current.Session["Type"].ToString() == "Operator")
+		{
+			<div class="form-group">
+				<div class="col-md-offset-2 col-md-10">
+					<a class="btn btn-default" href="@Url.Action("RestartElevator", new { elevatorID = @Model.ID })">Perkrauti lifto sistemą &raquo;</a>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-md-offset-2 col-md-10">
+					<a class="btn btn-default" href="@Url.Action("TurnOffBrakes", new { elevatorID = @Model.ID })">Išjungti avarinius stabdžius &raquo;</a>
+				</div>
+			</div>
+		}
+		<div class="form-group">
+			<div class="col-md-offset-2 col-md-10">
+				<a class="btn btn-default" href="@Url.Action("ElevatorAPI", new { id = @Model.ID })">Lifto API &raquo;</a>
 
-            </div>
-            </div>
-            </div>
-            }
+			</div>
+		</div>
+	</div>
+}
 
-            <div class="row">
-                <p>
-                    <a class="btn btn-default" href="~/Elevators/ElevatorsList">Grįžti į sąrašą &raquo;</a>
-                </p>
-            </div>
+@if (HttpContext.Current.Session["Type"].ToString() == "Handyman")
+{
+	<a class="btn btn-default" href="~/Home/IndexHandyman">Grįžti į pradžią &raquo;</a>
+}
+
+@if (HttpContext.Current.Session["Type"].ToString() == "Admin")
+{
+	<a class="btn btn-default" href="~/Elevators/ElevatorsList">Grįžti į sąrašą &raquo;</a>
+}
 

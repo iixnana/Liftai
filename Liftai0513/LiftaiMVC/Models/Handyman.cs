@@ -12,8 +12,16 @@ namespace LiftaiMVC.Models
         public int status { get; set; }
         public int currentTask { get; set; }
 
-        private Handyman()
+        public Handyman()
         {
+            id = 1;
+        }
+
+        public Handyman(int ID, int Status, int CurrentTask)
+        {
+            id = ID;
+            status = Status;
+            currentTask = CurrentTask;
         }
     }
 }

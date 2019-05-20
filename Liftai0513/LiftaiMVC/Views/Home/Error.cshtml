@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+@{
+	ViewBag.Title = "Error";
+	Layout = "~/Views/Shared/_LayoutIndex.cshtml";
+}
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Error</title>
+</head>
+<body>
+	<hgroup>
+		<h1>Error.</h1>
+		<h2>An error occurred while processing your request.</h2>
+	</hgroup>
+	<div class="alert alert-warning alert-dismissable"><p>@TempData["error"]</p></div>
+	<div><a class="btn btn-default" href="@Url.Action("Login")">Eiti į prisijungimą</a></div>
+</body>
+</html>

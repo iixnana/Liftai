@@ -13,8 +13,6 @@ namespace LiftaiMVC.Controllers
             return View();
         }
 
-
-
         public ActionResult IndexOperator()
         {
             Session["Type"] = "Operator";
@@ -30,13 +28,27 @@ namespace LiftaiMVC.Controllers
         public ActionResult IndexHandyman()
         {
             Session["Type"] = "Handyman";
-
-            Models.ElevatorsDB db = new Models.ElevatorsDB();
-            var handyman = db.Handymans.First(x => x.id == 1);
-
-            var task = db.Tasks.First(x => x.id == handyman.currentTask);
-            return View(task);
+            try
+            {
+                Models.ElevatorsDB db = new Models.ElevatorsDB();
+                var handyman = db.Handymans.First(x => x.id == 1);
+                if (handyman.currentTask != 0 && db.Tasks.Count() > 0)
+                {
+                    var task = db.Tasks.First(x => x.id == handyman.currentTask);
+                    return View(task);
+                }
+                else
+                {
+                    return View();
+                }
         }
+            catch (Exception e)
+            {
+                TempData["error"] = e.Message;
+                return RedirectToAction("Error");
+    }
+
+}
 
 
         public ActionResult Login()
@@ -44,27 +56,6 @@ namespace LiftaiMVC.Controllers
             Session["Type"] = "";
             return View();
         }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
-
-        //public ActionResult ElevatorsList()
-        //{
-        //    ViewBag.Message = "Liftų sąrašas";
-
-        //    return View();
-        //}
 
         public Models.Task selectNewTask()
         {
@@ -79,43 +70,75 @@ namespace LiftaiMVC.Controllers
             return newTask;
         }
 
+        public ActionResult findNewTask()
+        {
+            Models.ElevatorsDB db = new Models.ElevatorsDB();
+            var handyman = db.Handymans.First(x => x.id == 1);
+            var selectedTask = selectNewTask(); //New Task
+
+            if (handyman.status == 1 || handyman.currentTask == 0)
+            {
+                if (selectedTask != null)
+                {
+                    Models.Handyman handymanNew = new Models.Handyman(1, 2, selectedTask.id);
+                    db.Entry(handyman).CurrentValues.SetValues(handymanNew);
+                    db.SaveChanges();
+                }
+                else
+                {
+                    Models.Handyman handymanNew = new Models.Handyman(1, 1, 0);
+                    db.Entry(handyman).CurrentValues.SetValues(handymanNew);
+                    db.SaveChanges();
+                }
+                    
+            }
+            return RedirectToAction("IndexHandyman");
+        }
+
         public ActionResult changeStatus()
         {
             Models.ElevatorsDB db = new Models.ElevatorsDB();
             var handyman = db.Handymans.First(x => x.id == 1);
             var finishedTask = db.Tasks.First(x => x.id == handyman.currentTask);
-
-            var selectedTask = selectNewTask();
-            Models.Handyman handymanNew = handyman;
+            db.Tasks.Remove(finishedTask);
+            db.SaveChanges();
+            Models.Task selectedTask = selectNewTask(); //New Task
 
             if (handyman.status == 1)
             {
                 if (selectedTask != null)
                 {
-                    handymanNew.currentTask = selectedTask.id;
+                    Models.Handyman handymanNew = new Models.Handyman(1, 2, selectedTask.id);
                     db.Entry(handyman).CurrentValues.SetValues(handymanNew);
-                    db.Entry("2").CurrentValues.SetValues(handyman.status);
                     db.SaveChanges();
                 }
-                else RedirectToAction("IndexHandyman");
+                else return RedirectToAction("IndexHandyman");
             }
             else if (handyman.status == 2)
             {
+                var elevator = db.Elevators.First(x => x.ID == finishedTask.ElevatorID);
+                elevator.State = Models.States.active;
+                db.Entry(elevator).CurrentValues.SetValues(elevator);
+                db.SaveChanges();
                 if (selectedTask != null)
                 {
-                    handymanNew.currentTask = selectedTask.id;
+                    Models.Handyman handymanNew = new Models.Handyman(1, 2, selectedTask.id);
                     db.Entry(handyman).CurrentValues.SetValues(handymanNew);
-                    db.Tasks.Remove(finishedTask);
                     db.SaveChanges();
                 }
                 else
                 {
-                    db.Entry("1").CurrentValues.SetValues(handyman.status);
-                    RedirectToAction("IndexHandyman");
+                    Models.Handyman handymanNew = new Models.Handyman(1, 1, 0);
+                    db.Entry(handyman).CurrentValues.SetValues(handymanNew);
+                    db.SaveChanges();
                 }
             }
-
             return RedirectToAction("IndexHandyman");
+        }
+
+        public ActionResult Error()
+        {
+            return View();
         }
     }
 }

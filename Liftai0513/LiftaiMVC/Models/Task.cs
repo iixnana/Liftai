@@ -19,9 +19,23 @@ namespace LiftaiMVC.Models
         {
             this.ElevatorID = elevatorID;
             this.FailureDate = DateTime.Now.ToLocalTime();
-            this.FixDate = null;
+            this.FixDate = DateTime.Now.Date;
             this.Description = description;
             this.Priority = priority;
+        }
+
+        public Task()
+        {
+
+        }
+
+        private Task(DateTime FailureDate, DateTime FixDate, string Description, int Priority, int ElevatorID)
+        {
+            this.FailureDate = FailureDate;
+            this.FixDate = FixDate;
+            this.Description = Description;
+            this.Priority = Priority;
+            this.ElevatorID = ElevatorID;
         }
     }
 }
