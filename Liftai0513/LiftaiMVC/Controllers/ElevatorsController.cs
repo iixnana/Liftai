@@ -256,7 +256,6 @@ namespace LiftaiMVC.Controllers
                     string description = "Lifto būklė pasikeitė į " + Models.Elevator.StateName(state);
                     if (taskController.CreateTask(elevatorID, description))
                         TempData["EditSuccess"] += " Pridėta nauja užduotis.";
-                    RedirectToAction("findNewTask", "Home"); //Automatiskai bando priskirt meistrui, jei jis laisvas
                 }
 
                 return RedirectToAction("DetailedElevatorInfo", new { id = elevatorID });
