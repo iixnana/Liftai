@@ -2,6 +2,10 @@
 
 Programą galima paleisti per Visual Studio. (Liftai0513 katalogas, LiftaiMVC.sln)
 
+
+Darbas kurtas waterfall metodu, iš pradžių aprašant sistemą ir kuriant UML diagramas.
+Realizuota naudojantis MVC sistema (Visual Studio, ASP.NET)
+
 Pradinis sistemos aprašymas:
 Kuriama liftų valdymo sistema, kuri padeda valdyti liftų priežiūrą ir tvarkymą. Pagrindiniai sistemos vartotojai yra tokie: administratorius, operatorius ir meistras. Taip pat, prie sistemos turi būti prijungti valdomi liftai
 Prisijungęs prie sistemos, sistemos vartotojas gali peržiūrėti pastatų bei liftų sąrašus ir, jei reikia, detalesnę informaciją apie pasirinktą pastatą arba liftą.
@@ -15,5 +19,10 @@ Ne visa sistema buvo realizuota. Realizuotos šios dalys:
 2. Sukurtas lifto API. T.y. mygtukai atitinka lifto siunčiamus signalus. Signalai (pagalba, sugedęs liftas) sukuria naują užduotį.
 3. Meistrui priskiriama darbo užduotis, jei tokių yra. Jei jų nėra, bus priskirta, kai atsiras nauja darbo užduotis.
 
-Darbas kurtas waterfall metodu, iš pradžių aprašant sistemą ir kuriant UML diagramas.
-Realizuota naudojantis MVC sistema (Visual Studio, ASP.NET)
+Bendradarbiai:
+Martynas Rutkus
+Tautvydas Korkuzas
+Kamilė Tumšytė
+Kamilė Nanartonytė (realizavau 1-ą punktą iš 3, padėjau kolegoms, padariau pradinį programos karkasą)
+
+
