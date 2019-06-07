@@ -20,9 +20,9 @@ Ne visa sistema buvo realizuota. Realizuotos šios dalys:
 3. Meistrui priskiriama darbo užduotis, jei tokių yra. Jei jų nėra, bus priskirta, kai atsiras nauja darbo užduotis.
 
 Bendradarbiai:
-Martynas Rutkus
-Tautvydas Korkuzas
-Kamilė Tumšytė
+Martynas Rutkus,
+Tautvydas Korkuzas,
+Kamilė Tumšytė,
 Kamilė Nanartonytė (realizavau 1-ą punktą iš 3, padėjau kolegoms, padariau pradinį programos karkasą)
 
 
